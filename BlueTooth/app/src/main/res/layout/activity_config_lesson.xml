@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".ConfigLesson">
+      <LinearLayout
+          android:background="#FFEB3B"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <LinearLayout
+              android:background="#FFEB3B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+              <TextView
+                  android:id="@+id/txtHT"
+                  android:textAlignment="center"
+                  android:text="Hình Thức Tính"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+              </TextView>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerview1"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </androidx.recyclerview.widget.RecyclerView>
+          </LinearLayout>
+          <LinearLayout
+              android:background="#FFEB3B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+              <TextView
+                  android:id="@+id/txtTD"
+                  android:textAlignment="center"
+                  android:text="Tốc độ tính"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+              </TextView>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerview2"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </androidx.recyclerview.widget.RecyclerView>
+          </LinearLayout>
+          <LinearLayout
+              android:background="#FFEB3B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+              <TextView
+                  android:id="@+id/txtPVPT"
+                  android:textAlignment="center"
+                  android:text="Phạm vi phép tính "
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+              </TextView>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerview3"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </androidx.recyclerview.widget.RecyclerView>
+          </LinearLayout>
+          <LinearLayout
+              android:background="#FFEB3B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+          </LinearLayout>
+          <LinearLayout
+              android:background="#FFEB3B"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/txtBH"
+                  android:textAlignment="center"
+                  android:text="Sinh câu hỏi theo bài học "
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+              </TextView>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerview4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+              </androidx.recyclerview.widget.RecyclerView>
+              <TextView
+                  android:id="@+id/txtCTT"
+                  android:textAlignment="center"
+                  android:text="Công thức tính"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal">
+              </TextView>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerview5"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </androidx.recyclerview.widget.RecyclerView>
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogConfirmation">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/name"
+            android:textAlignment="center"
+            android:text="NHẬP MÃ KICH HOẠT"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/intro"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:textAlignment="center"
+            android:text="Nếu bạn đã có mã kích hoạt \n\tVui lòng nhập tại đây"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+        </TextView>
+        <EditText
+            android:id="@+id/edtma"
+            android:textAlignment="center"
+            android:hint="Mã kích hoạt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/intro"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+        </EditText>
+        <Button
+            android:id="@+id/btkh"
+            android:textAlignment="center"
+            android:text="Kích hoạt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtma"
+            android:background="@drawable/designbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
